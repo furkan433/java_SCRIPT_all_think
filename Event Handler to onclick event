@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <button onclick="asa()">click hear</button>
+    <p id="this">wonderfull bangladesh
+    </p>
+    <h1>hiji biji bangladesh
+    </h1>
+    <h1 id="a">BANGLADESH</h1>
+    <div id="java">
+        <h1>State programing</h1>
+        <script src="index.js"></script>
+    </div>
+
+</body>
+
+</html>
+//var date = new Date();
+//document.write(date);
+//var year = date.getUTCFullYear();
+//console.log(year);
+var doc = document.getElementById("this");
+doc.innerHTML = "bey";
+document.querySelector("#a").innerHTML = "indea";
+document.getElementsByTagName("h1")[0].innerHTML = "dur ho";
+
+function asa() {
+    alert("chapa chape koris kan");
+}
+var myver = document.querySelector("#pic");
+
+function mydf() {
+    myver.src = "img/love.jpg";
+}
+
+function mydf1() {
+    myver.src = "img/lov.jpg";
+}
