@@ -1,0 +1,18 @@
+<body>
+    <h1>kor kor click kor</h1>
+    <button class="mybutton">click 1</button>
+    <button class="mybutton">click 2</button>
+    <button class="mybutton">click 3</button>
+
+    <script src="index.js ">
+    </script>
+
+</body>
+-----------------------------------------------------------------------------------
+var len = document.querySelectorAll(".mybutton").length;
+for (var i = 0; i < len; i++) {
+    document.querySelectorAll(".mybutton")[i].addEventListener("click", function() {
+        var text = this.innerHTML;
+        document.querySelector("h1").innerHTML = text + "  is clicked";
+    });
+}
