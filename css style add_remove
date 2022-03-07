@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <p id="pop">Bangladesh is a bigest populer country</p>
+    <button onclick="addStyle()"> add</button>
+    <button onclick="reStyle()">Remove</button>
+    <script src="index.js">
+    </script>
+
+</body>
+
+</html>
+------------------------------------------------------
+body {
+    background-color: aqua;
+}
+
+.para-style {
+    color: red;
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+}
+------------------------------------------------
+function addStyle() {
+    var color = document.querySelector("#pop");
+    color.classList.add("para-style");
+}
+
+function reStyle() {
+    var color = document.querySelector("#pop");
+    color.classList.remove("para-style");
+}
